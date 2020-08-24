@@ -1,0 +1,38 @@
+.messageTopBlock {
+    padding: 10px;
+    position: relative;
+}
+
+.messageText {
+    padding: 10px;
+    border-top: 1px solid var(--black);
+    overflow: hidden;
+} 
+
+.date {
+    font-size: 12px;
+}
+
+.buttonsBlock {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.buttonsBlock button {
+    margin: 0 5px;
+    font-size: 20px;
+    transition: text-shadow 0.3s;
+    color: var(--black);
+}
+
+.buttonsBlock button:hover {
+    transition: text-shadow 0.3s;
+    color: var(--blackHover);
+}
+
+@media (max-width: 576px) {
+    .buttonsBlock button {
+        font-size: 14px;
+    }
+}

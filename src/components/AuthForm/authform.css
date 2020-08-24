@@ -1,0 +1,60 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--greyBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authForm {
+    padding: 25px;
+    background-color: var(--mainBackground);
+    text-align: right;
+    border-radius: 8px;
+    box-shadow: 0 0 15px var(--darkShadow);
+}
+
+.heading {
+    text-align: center;
+}
+
+.formItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.redBorder {
+    border: 1px solid var(--red);
+}
+
+.submitButton {
+    padding: 5px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    border: 1px solid var(--black);
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    transition: background-color 0.3s;
+    background-color: var(--blueHover);
+}
+
+.errorDescription {
+    color: var(--red);
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .authForm {
+        padding: 15px;
+    }
+}

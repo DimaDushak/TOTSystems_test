@@ -1,0 +1,39 @@
+.form {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--black);
+}
+
+.writtingField {
+    flex-grow: 1;
+}
+
+.openListButton {
+    margin: 0 15px;
+}
+
+.submitButton {
+    padding: 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    transition: background-color 0.3s;
+    background-color: var(--blueHover);
+}
+
+.emoticon {
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .submitButton {
+        padding: 15px 5px;
+    }
+
+    .openListButton {
+        margin: 0 5px;
+    }
+}
